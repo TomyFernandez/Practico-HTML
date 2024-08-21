@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctico HTML Desarrollo de Software</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td { border: 1px solid black;
+            padding: 8px;
+            text-align: center;         
+        }
+        tfoot{
+            font-weight: bold;
+            background-color: rgba(128, 128, 128, 0.301);
+        }
+    </style>
+</head>
+<body>
+    <h1>Práctico HTML. Desarrollo de Software</h1>
+    <section>   
+        <h2>1.Estructura Básica del Documento HTML</h2>
+            <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.</p>
+    </section>
+
+    <section>
+        <h2>2.Encabezados y Propiedades del Texto</h2>
+            <div>
+                <h4><b>Esto es un texto en negrita</b></h4>
+                <h5><em>Esto es un texto en cursiva</em></h5>
+                <h6><u>Esto es un texto subrayado</u></h6>
+            </div>
+    </section>
+
+    <section>        
+        <h2> 3. Divisiones y Agrupación de Contenido</h2>
+            <div>
+                <h3><b>Sección 1</b></h3>
+                <p>Contenido de la primera sección agrupada de un div.</p>
+            </div>
+            <div>
+                <h3><b>Sección 2</b></h3>
+                <p>Contenido de la segunda sección agrupada en un div.</p>
+            </div>
+    </section>     
+
+    <section> 
+    <!-- Links y listas -->
+        <h2>4.Links y listas</h2>
+            
+            <p>Visita nuestro <a href="https://campus.frm.utn.edu.ar/" target="_blank">sitio web</a> para más información</p>
+            <nav>
+                <h3>Enlaces internos:</h3>
+                <!-- pongo los enlaces internos -->
+                <p><a href="#seccion1">Ir a Multimedia</a></p>
+                <p><a href="#seccion2">Ir a Tabla</a></p>
+
+            </nav>
+            <div>
+            <p>Lista desordenada:</p>
+                <ul>
+                    <li>Primer elemento de una lista desordenada</li>
+                    <li>Segundo elemento de una lista desordenada</li>
+                </ul>
+            </div>
+            <div>
+                <p>Lista ordenada:</p>
+                    <ol>
+                        <li>Primer elemento de una lista desordenada</li>
+                        <li>Segundo elemento de una lista desordenada</li>
+                    </ol>
+                </div>
+    </section>
+
+    <section id="seccion1">
+        <h2>5. Elementos Multimedia</h2>
+        <div>
+            <p>Primer imagen</p>
+            <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg" 
+                alt="Esto es una imagen de mario" width="200px" height="200px"/>
+        </div>
+
+        <div>
+            <p>Primer video</p>
+            <video src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
+                    width="200px" height="200px" controls/>     
+        </div>
+
+        <div>
+            <p>Primer audio</p>
+            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls/>
+        </div>
+    </section>
+    
+    <section id="seccion2">
+        <h2>6. Tablas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fila 1-Celda 1</td>
+                    <td>Fila 1-Celda 2</td>
+                    <td>Fila 1-Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 2-Celda 1</td>
+                    <td>Fila 2-Celda 2</td>
+                    <td>Fila 2-Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 3-Celda 1</td>
+                    <td>Fila 3-Celda 2</td>
+                    <td>Fila 3-Celda 3</td>
+                </tr>
+            </tbody>
+          
+            <tfoot>
+                <tr>
+                    <td>total 1</td>
+                    <td>total 2</td>
+                    <td>total 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h2>7. Formulario</h2>
+        <form>
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="example@example.com" />
+            </div>
+            <div>
+                <label>Nombre</label>
+                <input type="text" placeholder="ingrese su nombre" />
+            </div>
+            <div>
+                <label>Mensaje</label>
+                <textarea placeholder="Ingrese el mensaje que desea enviar"></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar formulario</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
